@@ -66,7 +66,6 @@ class ContentProvider : ContentProvider() {
         throw IllegalArgumentException("Failed to delete row into $uri")
     }
 
-
     override fun update(
         uri: Uri, values: ContentValues?, selection: String?, selectionArgs: Array<out String>?
     ): Int {

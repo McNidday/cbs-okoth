@@ -5,13 +5,11 @@ import android.bluetooth.BluetoothAdapter
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import android.provider.Settings
 import android.view.View
 import android.widget.TextView
 
 
 class ConnectivityReceiver : BroadcastReceiver() {
-
     override fun onReceive(context: Context, intent: Intent) {
         // This method is called when the BroadcastReceiver is receiving an Intent broadcast.
         if (intent.action == BluetoothAdapter.ACTION_STATE_CHANGED) {
